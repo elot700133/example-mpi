@@ -1,0 +1,10 @@
+using:
+  fedora 3.12.8-200.fc19.x86_64 #1 SMP
+  openmpi-devel 1.6.5
+  gcc 4.8.3
+
+Add following to bashrc since it doesn't put binary to /usr/bin
+  # openmpi
+  export PATH=$PATH:/usr/lib64/openmpi/bin
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64/openmpi/lib
+
